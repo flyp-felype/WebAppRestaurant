@@ -11,30 +11,38 @@
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="{{ asset('css/materialize.css') }}">
-
+        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         <!-- Styles -->
 
     </head>
     <body>
-      <ul id="slide-out" class="side-nav">
-        <li><div class="userView">
-          <div class="background">
-            <img src="images/office.jpg">
-          </div>
-          <a href="#!user"><img class="circle" src="images/yuna.jpg"></a>
-          <a href="#!name"><span class="white-text name">John Doe</span></a>
-          <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
-        </div></li>
-        <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-        <li><a href="#!">Second Link</a></li>
-        <li><div class="divider"></div></li>
-        <li><a class="subheader">Subheader</a></li>
-        <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
-      </ul>
-      <div class="to-navbar-black black">
-        <a href="#" data-activates="slide-out" class="button-collapse text-white"><i class="material-icons text-white">menu</i></a>
+      <nav class="black">
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo">Samthiago Bistrô</a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="right dark">
 
-      </div>
+            <li><a href="mobile.html"><i class="material-icons">search</i></a></li>
+          </ul>
+
+          <ul id="mobile-demo" class="side-nav grey darken-4 white-text">
+            <li><div class="userView">
+              <div class="background">
+
+              </div>
+              <center>
+                <img class="responsive-img img-logo" src="images/logo-samthiago.png">
+              </center>
+            </div></li>
+            <li><a href="#!" class=" white-text"><i class="material-icons  white-text">receipt</i>Cardápio</a></li>
+            <li><a href="#!" class=" white-text"><i class="material-icons  white-text">star</i>Promoções</a></li>
+            <li><a href="#!" class=" white-text"><i class="material-icons  white-text">schedule</i>Reservas</a></li>
+
+          </ul>
+        </div>
+      </nav>
+
+      
         @yield('content')
 
 
