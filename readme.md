@@ -13,3 +13,21 @@ Documentation for the framework can be found on the [Laravel website](http://lar
 ## Versão
 
 Ainda estão na versão beta apenas com as reservas sendo desenvolvido
+
+
+## Banco de dados
+
+Copiei o arquivo .env.example e apague o .example
+
+Altere o código para os dados do seu servidor
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=homestead
+DB_USERNAME=homestead
+DB_PASSWORD=secret
+
+Depois rode o artisan migrate para criar toda estrutura de Banco
+
+php artisan migrate
