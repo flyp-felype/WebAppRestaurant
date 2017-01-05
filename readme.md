@@ -1,4 +1,4 @@
-# Progressive Web App for Restaurants
+# (BETA)Progressive Web App for Restaurants
 
 ## O que é?
 
