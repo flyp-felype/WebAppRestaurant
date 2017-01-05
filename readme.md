@@ -7,7 +7,11 @@ Progressive Web App para restaurantes e bistrô é um web app para gerenciar as 
 ## Official Documentation
 
 Foi desenvolvido usando Laravel e Angular
+
+Documentation for the framework can be found on the [Angular.io](https://angular.io/docs/ts/latest/).
 Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+
+Front-End foi usado o Materialize.css http://materializecss.com/color.html
 
 
 ## Versão
@@ -21,12 +25,12 @@ Copiei o arquivo .env.example e apague o .example
 
 Altere o código para os dados do seu servidor
 
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=homestead
-DB_USERNAME=homestead
-DB_PASSWORD=secret
+DB_CONNECTION=mysql<br>
+DB_HOST=127.0.0.1<br>
+DB_PORT=3306<br>
+DB_DATABASE=homestead<br>
+DB_USERNAME=homestead<br>
+DB_PASSWORD=secret<br>
 
 Depois rode o artisan migrate para criar toda estrutura de Banco
 
