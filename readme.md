@@ -9,6 +9,7 @@ Progressive Web App para restaurantes e bistrô é um web app para gerenciar as 
 Foi desenvolvido usando Laravel e Angular
 
 Documentation for the framework can be found on the [Angular.io](https://angular.io/docs/ts/latest/).
+
 Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
 
 Front-End foi usado o Materialize.css http://materializecss.com/color.html
