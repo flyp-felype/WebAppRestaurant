@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\smclientes;
+use App\smreserva;
 
 class ReservaController extends Controller
 {
@@ -31,6 +33,7 @@ class ReservaController extends Controller
     public function create()
     {
         //
+        return view('reservas/create');
     }
 
     /**
@@ -41,7 +44,35 @@ class ReservaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        try {
+
+          $cliente = new smclientes;
+          $reserva = new smreserva;
+
+          $maxcliente = $cliente->max('id') + 1;
+         $cliente->id                 = $maxcliente;
+         $cliente->nome               = $request->name;
+         $cliente->email              = $request->email;
+         $cliente->ultimonome         = $request->ultimoname;
+         $cliente->celular            = $request->celular;
+         $cliente->token              = '';
+         $cliente->foto              = '';
+         $cliente->id_facebook        = 1;
+         $cliente->save();
+
+         $maxreserva = $reserva->max('ID') + 1;
+         $reserva->id           = $maxreserva;
+         $reserva->data         = $request->datareserva;
+         $reserva->horas        = $request->horareserva;
+         $reserva->qtdpessoa    = $request->qtdpessoas;
+         $reserva->qtdmesa      = $request->qtdmesas;
+         $reserva->smclienteid  = $maxcliente;
+         $reserva->save();
+
+        } catch (Exception $e) {
+            print($e);
+        }
+
     }
 
     /**
