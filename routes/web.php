@@ -27,3 +27,6 @@ Route::get('/reservas/{id}', 'ReservaController@show');
 Route::get('/reservas/{id}/edit', 'ReservaController@edit');
 Route::put('/reservas/{id}', 'ReservaController@update');
 Route::delete('/reservas/{id}', 'ReservaController@destroy');
+
+Route::get('/reservas/canceled/{id}', 'ReservaController@updateCanceled');
+Route::get('/reservas/confirmation/{id}', 'ReservaController@updateConfirmation');
